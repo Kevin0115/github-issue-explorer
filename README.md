@@ -1,3 +1,6 @@
+# github-issue-explorer
+A simple search tool for exploring GitHub Issues of a repo
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
