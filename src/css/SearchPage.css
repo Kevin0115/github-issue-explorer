@@ -1,0 +1,99 @@
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none;
+    pointer-events: none;
+  }
+}
+
+@keyframes fadein {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: #E91E63;
+  }
+}
+
+#search-page,
+#search-page-hidden {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #E91E63;
+  -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
+  transition: height 1s;
+}
+
+#search-page {
+  height: 100vh;
+}
+
+#search-page-hidden {
+  height: 0vh;
+  animation: fadeout 0.4s;
+  animation-fill-mode: forwards;
+}
+
+#search-page-title {
+  margin: 0 0 24px;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+}
+
+#form-inputs {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+#text-input {
+  height: 80px;
+  width: 48vw;
+  padding: 0 0 0 16px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+}
+
+#button-container {
+  background-color: #FFFFFF;
+}
+
+#search-button {
+  display: block;
+  height: 30px;
+  width: 30px;
+  padding: 25px;
+  border: none;
+  opacity: 0.3;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Montserrat-Light", sans-serif;
+  font-size: 28px;
+  color: #CCCCCC;
+}
+
+:-ms-input-placeholder {
+  font-family: "Montserrat-Light", sans-serif;
+  font-size: 28px;
+  color: #CCCCCC;
+}
+
+:-moz-placeholder {
+  font-family: "Montserrat-Light", sans-serif;
+  font-size: 28px;
+  color: #CCCCCC;
+}
+
+::-moz-placeholder {
+  font-family: "Montserrat-Light", sans-serif;
+  font-size: 28px;
+  color: #CCCCCC;
+}

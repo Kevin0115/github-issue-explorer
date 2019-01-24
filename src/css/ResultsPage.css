@@ -1,0 +1,129 @@
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none;
+    pointer-events: none;
+  }
+}
+
+#results-page,
+#results-page-hidden {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
+  transition: height 1s;
+}
+
+#results-page {
+  height: 100vh;
+}
+
+#results-page-hidden {
+  animation: fadeout 0.4s;
+  animation-fill-mode: forwards;
+  height: 0vh;
+}
+
+#results-header {
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  background-color: #E91E63;
+  box-shadow: 16px 4px 16px 4px rgba(0, 0, 0, 0.19);
+}
+
+#results-header p {
+  margin: 0 48px;
+}
+
+#header-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+#url {
+  font-family: "Montserrat-Light";
+  font-size: 18px;
+  color: #880E4F;
+}
+
+#standalone-message {
+  flex: 8;
+  font-size: 28px;
+  color: #CFD8DC;
+}
+
+#results-content {
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+#exit {
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  width: 98%;
+  justify-content: flex-end;
+  align-items: flex-end; 
+}
+
+#exit-button {
+  height: 24px;
+  width: auto;
+  margin-bottom: 8px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+#filter-labels {
+  flex: 0.8;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+
+.label-selected,
+.label-unselected {
+  font-size: 12px;
+  font-family: "Montserrat-Light";
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.label-unselected {
+  color: #607D8B;
+}
+
+.label-selected {
+  color: #E91E63;
+}
+
+#issue-content {
+  flex: 10;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  overflow-y: scroll;
+}
+
+/* Ensures space-between doesn't cause weird space in 2-item rows */
+#issue-content:after {
+  content: "";
+  width: 366px;
+}
