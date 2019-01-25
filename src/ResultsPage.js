@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './css/ResultsPage.css';
 import Issue from './components/Issue.js';
+import LoadingSpinner from './components/LoadingSpinner.js';
 import Exit from './assets/images/close.svg';
 
 class ResultsPage extends Component {
@@ -30,13 +31,6 @@ class ResultsPage extends Component {
   }
 
   _renderIssues() {
-    if (this.props.issuesJSON.length === 0) {
-      return (
-        <p id="standalone-message">
-          Nothing to show here.
-        </p>
-      );
-    }
     const status = this.state.selectedState;
     return this.props.issuesJSON.map((item) => {
       if ((status === "all" || status === item.state) ||
@@ -84,7 +78,9 @@ class ResultsPage extends Component {
           </div>
           {
             this.props.badUrl ?
-            this._renderErrorMessage() : 
+            this._renderErrorMessage() :
+            this.props.isLoading ?
+            <LoadingSpinner /> :
             this.props.issuesJSON.length === 0 ?
             <p id="standalone-message">
               Nothing to show here.

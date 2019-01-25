@@ -13,7 +13,8 @@ class IssueExplorer extends Component {
       textInputVal: "",
       submittedText: "",
       issuesJSON: [],
-      badUrl: true,
+      badUrl: false,
+      isLoading: false,
     }
     this._handleChange = this._handleChange.bind(this);
     this._handleSubmit = this._handleSubmit.bind(this);
@@ -41,6 +42,7 @@ class IssueExplorer extends Component {
     this.setState({
       textInputVal: "",
       submittedText: "",
+      badUrl: false,
     });
     document.getElementById("search-page-hidden").id = "search-page";
     document.getElementById("results-page").id = "results-page-hidden";
@@ -57,6 +59,7 @@ class IssueExplorer extends Component {
 
   // PAGINATION!!!
   _retrieveIssuesJSON() {
+    this.setState({isLoading: true});
     // For testing; make this more general
     const urlBase = "https://api.github.com/repos/"
     const repoPath = this._retrieveRepoPath();
@@ -86,6 +89,7 @@ class IssueExplorer extends Component {
       } else {
         this.setState({
           issuesJSON: response,
+          isLoading: false,
         });
       }
     })
@@ -107,6 +111,7 @@ class IssueExplorer extends Component {
           submittedText={this.state.submittedText}
           issuesJSON={this.state.issuesJSON}
           badUrl={this.state.badUrl}
+          isLoading={this.state.isLoading}
         />
       </div>
     );
