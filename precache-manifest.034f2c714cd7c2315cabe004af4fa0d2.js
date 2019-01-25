@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "49c092514c29c82004792213332c11ee",
-    "url": "/github-issue-explorer/static/media/close.49c09251.svg"
+    "revision": "97f19b0b5565736252d5aac8749f9a48",
+    "url": "/github-issue-explorer/static/media/spinner.97f19b0b.svg"
   },
   {
-    "revision": "521a79030910c7d7ebfa",
-    "url": "/github-issue-explorer/static/css/main.dd933a19.chunk.css"
+    "revision": "8e6f4f225e1e4bdff329",
+    "url": "/github-issue-explorer/static/css/main.307a8178.chunk.css"
   },
   {
-    "revision": "4eaa2fb5bf664cc496fc",
-    "url": "/github-issue-explorer/static/js/1.4eaa2fb5.chunk.js"
+    "revision": "6ccc81afc1bde79a7eb5",
+    "url": "/github-issue-explorer/static/js/1.6ccc81af.chunk.js"
   },
   {
     "revision": "0e65a55c9a5f58476ab5",
@@ -32,16 +32,20 @@ self.__precacheManifest = [
     "url": "/github-issue-explorer/static/media/issue-closed.29eed3f5.svg"
   },
   {
-    "revision": "521a79030910c7d7ebfa",
-    "url": "/github-issue-explorer/static/js/main.521a7903.chunk.js"
+    "revision": "8e6f4f225e1e4bdff329",
+    "url": "/github-issue-explorer/static/js/main.8e6f4f22.chunk.js"
   },
   {
-    "revision": "3fb4d2902124120fbdc713a267b36403",
-    "url": "/github-issue-explorer/static/media/montserrat-regular.3fb4d290.woff"
+    "revision": "49c092514c29c82004792213332c11ee",
+    "url": "/github-issue-explorer/static/media/close.49c09251.svg"
   },
   {
     "revision": "b94d4bb6c9c96d53b7a724f6d7397b49",
     "url": "/github-issue-explorer/static/media/montserrat-regular.b94d4bb6.woff2"
+  },
+  {
+    "revision": "3fb4d2902124120fbdc713a267b36403",
+    "url": "/github-issue-explorer/static/media/montserrat-regular.3fb4d290.woff"
   },
   {
     "revision": "b760b19f49a84fd4b3ce2252969dec30",
@@ -60,7 +64,7 @@ self.__precacheManifest = [
     "url": "/github-issue-explorer/static/media/montserrat-light.d0d8af75.woff2"
   },
   {
-    "revision": "2577aa00775038ad90c3f2e608cf9115",
+    "revision": "188897acf53ddcfe2c8af8fab587ed7c",
     "url": "/github-issue-explorer/index.html"
   }
 ];
