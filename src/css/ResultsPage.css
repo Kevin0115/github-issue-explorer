@@ -118,6 +118,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   width: 90%;
   overflow-y: scroll;
 }
@@ -126,4 +127,11 @@
 #issue-content:after {
   content: "";
   width: 366px;
+}
+
+@media only screen and (max-width: 500px) {
+  #results-header {
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }

@@ -14,11 +14,14 @@ class ResultsPage extends Component {
   }
 
   _handleFilterSelect(e) {
-    if (e.target.id === this.state.selectedState) {
+    if (e.target.id === this.state.selectedState ||
+      this.props.badUrl || this.props.isLoading ||
+      this.props.issuesJSON.length === 0) {
       return;
     }
     document.getElementById(this.state.selectedState).className = "label-unselected";
     document.getElementById(e.target.id).className = "label-selected";
+    document.getElementById("issue-content").scrollTop = 0;
     this.setState({selectedState: e.target.id});
   }
 

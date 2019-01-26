@@ -97,3 +97,64 @@
   font-size: 28px;
   color: #CCCCCC;
 }
+
+@media only screen and (max-width: 850px) {
+  ::-webkit-input-placeholder {
+    font-size: 24px;
+  }
+  
+  :-ms-input-placeholder {
+    font-size: 24px;
+  }
+  
+  :-moz-placeholder {
+    font-size: 24px;
+  }
+  
+  ::-moz-placeholder {
+    font-size: 24px;
+  }
+
+  #text-input {
+    padding: 0 0 0 8px;
+    width: 56vw;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #search-page-title {
+    font-size: 28px;
+  }
+
+  #text-input {
+    height: 64px;
+    font-size: 14px;
+  }
+
+  #search-button {
+    height: 20px;
+    width: 20px;
+    padding: 22px;
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  
+  :-ms-input-placeholder {
+    font-size: 14px;
+  }
+  
+  :-moz-placeholder {
+    font-size: 14px;
+  }
+  
+  ::-moz-placeholder {
+    font-size: 14px;
+  }
+
+  #text-input {
+    font-size: 14px;
+  }
+}

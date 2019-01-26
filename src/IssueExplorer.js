@@ -16,12 +16,12 @@ class IssueExplorer extends Component {
       badUrl: false,
       isLoading: false,
     }
-    this._handleChange = this._handleChange.bind(this);
+    this._handleInputChange = this._handleInputChange.bind(this);
     this._handleSubmit = this._handleSubmit.bind(this);
     this._handleExit = this._handleExit.bind(this);
   }
 
-  _handleChange(textEvent) {
+  _handleInputChange(textEvent) {
     this.setState({textInputVal: textEvent.target.value})
   }
 
@@ -57,10 +57,8 @@ class IssueExplorer extends Component {
     }
   }
 
-  // PAGINATION!!!
   _retrieveIssuesJSON() {
     this.setState({isLoading: true});
-    // For testing; make this more general
     const urlBase = "https://api.github.com/repos/"
     const repoPath = this._retrieveRepoPath();
     const params = "/issues?state=all&per_page=100"; // Default grab all issues
@@ -69,11 +67,8 @@ class IssueExplorer extends Component {
     // We'll send the GET request and check the status for bad URL
     .then(
       (response) => {
-        // Parse the header here and determine number of pages
-        // if (!response.headers.get("link").indexOf("next") > 0) {
-        //   this.setState({noMorePages: true});
-        // }
         if (response.status !== 200) {
+          // Bad URLs handled via message on the results page
           this.setState({badUrl: true});
           return [];
         } else {
@@ -89,7 +84,7 @@ class IssueExplorer extends Component {
       } else {
         this.setState({
           issuesJSON: response,
-          isLoading: false,
+          isLoading: false, // Disables the loading spinner
         });
       }
     })
@@ -103,7 +98,7 @@ class IssueExplorer extends Component {
       <div id="issue-explorer">
         <SearchPage
           value={this.state.textInputVal}
-          onChange={this._handleChange}
+          onChange={this._handleInputChange}
           onSubmit={this._handleSubmit}
         />
         <ResultsPage
