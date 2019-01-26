@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/github-issue-explorer/static/media/spinner.97f19b0b.svg"
   },
   {
-    "revision": "8e6f4f225e1e4bdff329",
-    "url": "/github-issue-explorer/static/css/main.307a8178.chunk.css"
+    "revision": "e33ef4953b6d1ee3aa81",
+    "url": "/github-issue-explorer/static/css/main.d15d112e.chunk.css"
   },
   {
     "revision": "6ccc81afc1bde79a7eb5",
@@ -32,20 +32,24 @@ self.__precacheManifest = [
     "url": "/github-issue-explorer/static/media/issue-closed.29eed3f5.svg"
   },
   {
-    "revision": "8e6f4f225e1e4bdff329",
-    "url": "/github-issue-explorer/static/js/main.8e6f4f22.chunk.js"
+    "revision": "e33ef4953b6d1ee3aa81",
+    "url": "/github-issue-explorer/static/js/main.e33ef495.chunk.js"
   },
   {
     "revision": "49c092514c29c82004792213332c11ee",
     "url": "/github-issue-explorer/static/media/close.49c09251.svg"
   },
   {
+    "revision": "3fb4d2902124120fbdc713a267b36403",
+    "url": "/github-issue-explorer/static/media/montserrat-regular.3fb4d290.woff"
+  },
+  {
     "revision": "b94d4bb6c9c96d53b7a724f6d7397b49",
     "url": "/github-issue-explorer/static/media/montserrat-regular.b94d4bb6.woff2"
   },
   {
-    "revision": "3fb4d2902124120fbdc713a267b36403",
-    "url": "/github-issue-explorer/static/media/montserrat-regular.3fb4d290.woff"
+    "revision": "a820606bee2646d5ec81751628904dd4",
+    "url": "/github-issue-explorer/static/media/montserrat-light.a820606b.woff"
   },
   {
     "revision": "b760b19f49a84fd4b3ce2252969dec30",
@@ -56,15 +60,11 @@ self.__precacheManifest = [
     "url": "/github-issue-explorer/static/media/montserrat-bold.45af3727.woff2"
   },
   {
-    "revision": "a820606bee2646d5ec81751628904dd4",
-    "url": "/github-issue-explorer/static/media/montserrat-light.a820606b.woff"
-  },
-  {
     "revision": "d0d8af75aedd27ba147c6b6ad7d2eba7",
     "url": "/github-issue-explorer/static/media/montserrat-light.d0d8af75.woff2"
   },
   {
-    "revision": "188897acf53ddcfe2c8af8fab587ed7c",
+    "revision": "2c4589151078c544f7281abdb6fb22f5",
     "url": "/github-issue-explorer/index.html"
   }
 ];
