@@ -61,6 +61,10 @@
   font-size: 28px;
 }
 
+#text-input:focus {
+  outline: 0;
+}
+
 #button-container {
   background-color: #FFFFFF;
 }

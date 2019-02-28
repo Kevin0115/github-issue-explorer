@@ -26,6 +26,7 @@ class SearchPage extends Component {
               value={this.props.value}
               placeholder="Paste a link to a GitHub repo!"
               onChange={this.props.onChange}
+              spellCheck={false}
             />
           </div>
         </form>
