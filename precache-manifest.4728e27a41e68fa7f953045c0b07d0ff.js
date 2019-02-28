@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/github-issue-explorer/static/media/spinner.97f19b0b.svg"
   },
   {
-    "revision": "e33ef4953b6d1ee3aa81",
-    "url": "/github-issue-explorer/static/css/main.d15d112e.chunk.css"
+    "revision": "37a4ebc5152d5d22ab6c",
+    "url": "/github-issue-explorer/static/css/main.d48f5039.chunk.css"
   },
   {
     "revision": "6ccc81afc1bde79a7eb5",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/github-issue-explorer/static/media/issue-closed.29eed3f5.svg"
   },
   {
-    "revision": "e33ef4953b6d1ee3aa81",
-    "url": "/github-issue-explorer/static/js/main.e33ef495.chunk.js"
+    "revision": "37a4ebc5152d5d22ab6c",
+    "url": "/github-issue-explorer/static/js/main.37a4ebc5.chunk.js"
   },
   {
     "revision": "49c092514c29c82004792213332c11ee",
@@ -48,10 +48,6 @@ self.__precacheManifest = [
     "url": "/github-issue-explorer/static/media/montserrat-regular.b94d4bb6.woff2"
   },
   {
-    "revision": "a820606bee2646d5ec81751628904dd4",
-    "url": "/github-issue-explorer/static/media/montserrat-light.a820606b.woff"
-  },
-  {
     "revision": "b760b19f49a84fd4b3ce2252969dec30",
     "url": "/github-issue-explorer/static/media/montserrat-bold.b760b19f.woff"
   },
@@ -60,11 +56,15 @@ self.__precacheManifest = [
     "url": "/github-issue-explorer/static/media/montserrat-bold.45af3727.woff2"
   },
   {
+    "revision": "a820606bee2646d5ec81751628904dd4",
+    "url": "/github-issue-explorer/static/media/montserrat-light.a820606b.woff"
+  },
+  {
     "revision": "d0d8af75aedd27ba147c6b6ad7d2eba7",
     "url": "/github-issue-explorer/static/media/montserrat-light.d0d8af75.woff2"
   },
   {
-    "revision": "2c4589151078c544f7281abdb6fb22f5",
+    "revision": "f0329f00591be6bb9ab062f5e5ddab39",
     "url": "/github-issue-explorer/index.html"
   }
 ];
