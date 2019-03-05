@@ -40,20 +40,20 @@ self.__precacheManifest = [
     "url": "/github-issue-explorer/static/media/close.49c09251.svg"
   },
   {
-    "revision": "3fb4d2902124120fbdc713a267b36403",
-    "url": "/github-issue-explorer/static/media/montserrat-regular.3fb4d290.woff"
-  },
-  {
     "revision": "b94d4bb6c9c96d53b7a724f6d7397b49",
     "url": "/github-issue-explorer/static/media/montserrat-regular.b94d4bb6.woff2"
   },
   {
-    "revision": "b760b19f49a84fd4b3ce2252969dec30",
-    "url": "/github-issue-explorer/static/media/montserrat-bold.b760b19f.woff"
-  },
-  {
     "revision": "45af372786e4fc6d6c54a88018cd6ce5",
     "url": "/github-issue-explorer/static/media/montserrat-bold.45af3727.woff2"
+  },
+  {
+    "revision": "3fb4d2902124120fbdc713a267b36403",
+    "url": "/github-issue-explorer/static/media/montserrat-regular.3fb4d290.woff"
+  },
+  {
+    "revision": "b760b19f49a84fd4b3ce2252969dec30",
+    "url": "/github-issue-explorer/static/media/montserrat-bold.b760b19f.woff"
   },
   {
     "revision": "a820606bee2646d5ec81751628904dd4",
